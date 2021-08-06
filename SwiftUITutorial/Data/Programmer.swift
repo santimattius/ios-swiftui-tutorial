@@ -13,5 +13,5 @@ struct Programmer {
     var name :String
     var lenguages:String
     var avatar:Image
-    
+    var favorite:Bool
 }

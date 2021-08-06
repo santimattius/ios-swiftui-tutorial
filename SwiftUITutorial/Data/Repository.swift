@@ -8,35 +8,43 @@
 import Foundation
 import SwiftUI
 
-let programmers = [
-    Programmer(
-        id: 1,
-        name:"Santiago Mattiauda",
-        lenguages:"Kotlin, Swift, Dart",
-        avatar:Image(systemName: "person.fill")
-    ),
-    Programmer(
-        id: 2,
-        name:"Santiago Mattiauda",
-        lenguages:"Kotlin, Swift, Dart",
-        avatar:Image(systemName: "person.fill")
-    ),
-    Programmer(
-        id: 3,
-        name:"Santiago Mattiauda",
-        lenguages:"Kotlin, Swift, Dart",
-        avatar:Image(systemName: "person.fill")
-    ),
-    Programmer(
-        id: 4,
-        name:"Santiago Mattiauda",
-        lenguages:"Kotlin, Swift, Dart",
-        avatar:Image(systemName: "person.fill")
-    ),
-    Programmer(
-        id: 5,
-        name:"Santiago Mattiauda",
-        lenguages:"Kotlin, Swift, Dart",
-        avatar:Image(systemName: "person.fill")
-    )
-]
+final class ProgrammersModelData:ObservableObject{
+    @Published var programmers = [
+        Programmer(
+            id: 0,
+            name:"Santiago Mattiauda",
+            lenguages:"Kotlin, Swift, Dart",
+            avatar:Image(systemName: "person.fill"),
+            favorite: true
+        ),
+        Programmer(
+            id: 1,
+            name:"Santiago Mattiauda",
+            lenguages:"Kotlin, Swift, Dart",
+            avatar:Image(systemName: "person.fill"),
+            favorite: false
+        ),
+        Programmer(
+            id: 2,
+            name:"Santiago Mattiauda",
+            lenguages:"Kotlin, Swift, Dart",
+            avatar:Image(systemName: "person.fill"),
+            favorite: true
+        ),
+        Programmer(
+            id: 3,
+            name:"Santiago Mattiauda",
+            lenguages:"Kotlin, Swift, Dart",
+            avatar:Image(systemName: "person.fill"),
+            favorite: false
+        ),
+        Programmer(
+            id: 4,
+            name:"Santiago Mattiauda",
+            lenguages:"Kotlin, Swift, Dart",
+            avatar:Image(systemName: "person.fill"),
+            favorite: false
+        )
+    ]
+}
+

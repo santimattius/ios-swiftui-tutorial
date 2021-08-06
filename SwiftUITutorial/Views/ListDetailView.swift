@@ -10,16 +10,31 @@ import SwiftUI
 struct ListDetailView: View {
     
     var programmer:Programmer
+
+    @Binding var favorite:Bool
+    
     
     var body: some View {
         VStack{
             programmer.avatar
                 .resizable()
-                .frame(height: 200)
+                .frame(width:200, height: 200)
                 .clipShape(Circle())
                 .overlay(Circle().stroke(Color.black,lineWidth: 4))
                 .shadow(color:Color.gray,radius: 5 )
-            Text(programmer.name).font(.largeTitle)
+            HStack{
+                Text(programmer.name).font(.largeTitle)
+                Button{
+                    favorite.toggle()
+                } label:{
+                    if favorite {
+                        Image(systemName: "star.fill").foregroundColor(.yellow)
+                    } else {
+                        Image(systemName: "star").foregroundColor(.black)
+                    }
+                    
+                }
+            }
             Text(programmer.lenguages).font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
             Spacer()
         }
@@ -32,7 +47,7 @@ struct ListDetailView_Previews: PreviewProvider {
             id: 1,
             name:"Santiago Mattiauda",
             lenguages:"Kotlin, Swift, Dart",
-            avatar:Image(systemName: "person.fill")
-        ))
+            avatar:Image(systemName: "person.fill"),
+            favorite: true), favorite: .constant(false))
     }
 }

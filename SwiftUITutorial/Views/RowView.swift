@@ -20,6 +20,8 @@ struct RowView: View {
                 Text(programmer.name)
                 Text(programmer.lenguages)
             }
+            Spacer()
+            Image(systemName: "star.fill").foregroundColor(.yellow)
         }
     }
 }
@@ -31,7 +33,8 @@ struct RowView_Previews: PreviewProvider {
             id: 1,
             name:"Santiago Mattiauda",
             lenguages:"Kotlin, Swift, Dart",
-            avatar:Image(systemName: "person.fill")
+            avatar:Image(systemName: "person.fill"),
+            favorite: true
         ))
         
         
