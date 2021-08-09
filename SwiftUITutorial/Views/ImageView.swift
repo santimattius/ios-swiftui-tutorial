@@ -13,10 +13,10 @@ struct ImageView: View {
             Image("ic_youtube")
                 .resizable()
                 .frame(width: 100, height: 100, alignment:  .center)
-                .background(Color.gray)
+                .background(Color.white)
                 .clipShape(Circle())
-                .overlay(Circle().stroke(/*@START_MENU_TOKEN@*/Color.blue/*@END_MENU_TOKEN@*/,lineWidth: 4))
-                .shadow(color:Color.gray, radius: 5)
+                .overlay(Circle().stroke(Color.white,lineWidth: 4))
+                .shadow(color:Color.white, radius: 5)
         }
             
     }

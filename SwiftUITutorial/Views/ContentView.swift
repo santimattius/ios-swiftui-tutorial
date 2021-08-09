@@ -19,6 +19,7 @@ struct ContentView: View {
                 .font(.title)
                 .foregroundColor(Color.red)
                 .padding()
+            
             Text("Text 3")
                 .font(.title)
                 .foregroundColor(Color.red)

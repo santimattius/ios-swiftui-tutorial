@@ -19,31 +19,29 @@ struct StateView: View {
     @StateObject private var user = UserData()
     
     var body: some View {
-        NavigationView{
-            VStack{
-                Spacer()
-                Text("El valor es \(value)")
-                Button("Sumar 1"){
-                    value += 1
+        VStack{
+            Spacer()
+            Text("El valor es \(value)")
+            Button("Sumar 1"){
+                value += 1
+            }
+            Text("El valor actual es \(user.name)")
+            Text("Mi edad es \(user.age)")
+            Button("Actualizar datos"){
+                user.name = "Santiago Mattiuda"
+                user.age = 40
+            }
+            Spacer()
+            NavigationLink(
+                destination: BindingView(value: $value, user: user),
+                tag:1,
+                selection: $selection
+            ){
+                Button("Ir a BindingView"){
+                    selection = 1
                 }
-                Text("El valor actual es \(user.name)")
-                Text("Mi edad es \(user.age)")
-                Button("Actualizar datos"){
-                    user.name = "Santiago Mattiuda"
-                    user.age = 40
-                }
-                Spacer()
-                NavigationLink(
-                    destination: BindingView(value: $value, user: user),
-                    tag:1,
-                    selection: $selection
-                ){
-                    Button("Ir a BindingView"){
-                        selection = 1
-                    }
-                }
-            }.navigationTitle("StateView")
-        }
+            }
+        }.padding()
     }
 }
 

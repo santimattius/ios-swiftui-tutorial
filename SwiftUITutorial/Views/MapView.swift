@@ -25,6 +25,7 @@ struct MapView: UIViewRepresentable {
             latitudeDelta: 2,
             longitudeDelta: 2
         )
+        
         let  region = MKCoordinateRegion(center: coordinate, span: span)
         uiView.setRegion(region, animated: true)
         

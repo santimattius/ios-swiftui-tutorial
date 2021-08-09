@@ -104,9 +104,17 @@
 			path = PropertyWrappers;
 			sourceTree = "<group>";
 		};
+		4B84A15426C1E7A5009CE66B /* Screenshot */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screenshot;
+			sourceTree = "<group>";
+		};
 		4B85266D261D273100B5AF7F = {
 			isa = PBXGroup;
 			children = (
+				4B84A15426C1E7A5009CE66B /* Screenshot */,
 				4B852678261D273200B5AF7F /* SwiftUITutorial */,
 				4B85268A261D273400B5AF7F /* SwiftUITutorialTests */,
 				4B852695261D273400B5AF7F /* SwiftUITutorialUITests */,
