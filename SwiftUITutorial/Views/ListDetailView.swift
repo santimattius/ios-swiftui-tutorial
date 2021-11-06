@@ -37,7 +37,8 @@ struct ListDetailView: View {
             }
             Text(programmer.lenguages).font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
             Spacer()
-        }
+        }.navigationBarTitle("")
+         .navigationBarTitleDisplayMode(.inline)
     }
 }
 

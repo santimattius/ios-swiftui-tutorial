@@ -39,6 +39,8 @@ struct ListView: View {
             }
             
         }
+        .navigationBarTitle("")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

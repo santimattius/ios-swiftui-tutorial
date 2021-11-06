@@ -13,13 +13,13 @@ struct MainView: View {
     
     var body: some View {
         NavigationView{
-            VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: .none){
+            List{
                 NavigationLink(
                     destination: MapView(),
                     tag:1,
                     selection: $selection
                 ){
-                    Button("MapView"){
+                    Button("Using MapView from MapKit"){
                         selection = 1
                     }
                 }
@@ -28,7 +28,7 @@ struct MainView: View {
                     tag:2,
                     selection: $selection
                 ){
-                    Button("ImageView"){
+                    Button("Load image from assets"){
                         selection = 2
                     }
                 }
@@ -37,7 +37,7 @@ struct MainView: View {
                     tag:3,
                     selection: $selection
                 ){
-                    Button("ContentView"){
+                    Button("Example using VStack"){
                         selection = 3
                     }
                 }
@@ -46,7 +46,7 @@ struct MainView: View {
                     tag:4,
                     selection: $selection
                 ){
-                    Button("ListView"){
+                    Button("List with interactions"){
                         selection = 4
                     }
                 }
@@ -56,7 +56,7 @@ struct MainView: View {
                     tag:5,
                     selection: $selection
                 ){
-                    Button("StateView"){
+                    Button("Example using states"){
                         selection = 5
                     }
                 }
