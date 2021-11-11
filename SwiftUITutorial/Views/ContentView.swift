@@ -15,11 +15,11 @@ struct ContentView: View {
             TextView(text: "Stacked Text 3")
             TextView(text: "Stacked Text 4")
             TextView(text: "Stacked Text 5")
-            TextView(text: "Stacked Text  5")
-            TextView(text: "Stacked Text  6")
-            TextView(text: "Stacked Text  7")
+            TextView(text: "Stacked Text 5")
+            TextView(text: "Stacked Text 6")
+            TextView(text: "Stacked Text 7")
             Spacer()
-        }.navigationBarTitle("")
+        }.navigationBarTitle("Vertical Stack View")
         .navigationBarTitleDisplayMode(.inline)
     }
 }
@@ -34,7 +34,7 @@ struct TextView: View {
     var text:String
     var body: some View {
         Text(text)
-            .font(.title)
+            .font(.system(.title, design: .rounded))
             .multilineTextAlignment(.leading)
             .frame(
                 minWidth: 0,

@@ -18,6 +18,8 @@ struct ImageView: View {
                 .overlay(Circle().stroke(Color.white,lineWidth: 4))
                 .shadow(color:Color.white, radius: 5)
         }
+        .navigationBarTitle("")
+        .navigationBarTitleDisplayMode(.inline)
             
     }
 }

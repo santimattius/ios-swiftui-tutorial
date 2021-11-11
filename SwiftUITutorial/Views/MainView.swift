@@ -15,7 +15,9 @@ struct MainView: View {
         NavigationView{
             List{
                 NavigationLink(
-                    destination: MapView(),
+                    destination: MapView()
+                        .navigationBarTitle("")
+                        .navigationBarTitleDisplayMode(.inline),
                     tag:1,
                     selection: $selection
                 ){
