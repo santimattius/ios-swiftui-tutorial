@@ -1,4 +1,8 @@
-# ios-swiftui-tutorial
+<p align="center">
+<img src="https://github.com/santimattius/ios-swiftui-tutorial/blob/main/Screenshot/swift_ui_logo.png?raw=true" alt="App Capture"/>
+</p>
+
+# iOS SwiftUI Tutorial
 
 Project applying basic concepts in swiftui
 
